@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+<body>
+
+  <!-- Dev Tool -->
+  <div class="text-center fixed-top">
+    <p class="d-block d-sm-none">Extra small - xs</p>
+    <p class="d-none d-sm-block d-md-none">Small - sm</p>
+    <p class="d-none d-md-block d-lg-none">Medium - md</p>
+    <p class="d-none d-lg-block d-xl-none">Large - lg</p>
+    <p class="d-none d-xl-block">Extra large - xl</p>
+  </div>
+
+  <section class="container">
+    <div>
+
+      <!-- Titre -->
+      <div class="block col text-center">
+        <h1 class="my-2">Framework</h1>
+      </div>
+
+      <!-- Responsive -->
+      <article class="block col col-lg-6 col-xl-4 px-2 py-1">
+        <h2>Breakpoint Responsive</h2>
+        <p>Il est possible de créer des colonnes responsives et de leur indiquer la taille qu'elles vont prendre en fonction de la résolution de l'écran.</p>
+        <p>Pour utiliser les class responsives, le contenu doit être dans un conteneur ayant la class <code>container</code> et celui-ci doit contenir un div comme child.</p>
+        <p>Le code devrait ressembler à ceci : <code>class="container"</code> > <code>div</code> > <code>class="col..."</code>.</p>
+        <p>Ces tailles peuvent être modifiées dans le code en modifiant les variables <code>$media-sm</code>, <code>$media-md</code> et <code>$media-lg</code>.</p>
+        <p>Le nombre de colonnes actuellement est de 12 mais il peut être modifié grâce à la variable <code>$nb_columns</code>.</p>
+        <p>Le margin entre les colonnes est actuellement de 20px mais il peut être modifié grâce à la variable <code>$margin-grid</code>.</p>
+        <h3>Taille des breakpoints</h3>
+        <ul>
+          <li>Taille par défaut qu'importe la résolution de l'écran :</li>
+          <ul>
+            <li>class : <code>col</code></li>
+            <li>class : <code>col-<em>"1 à 12"</em></code></li>
+          </ul>
+          <li>Taille small (sm) :</li>
+          <ul>
+            <li>Taille max 480px</li>
+            <li>Class : <code>col-sm-<em>"1 à 12"</em></code></li>
+          </ul>
+          <li>Taille medium (md) :</li>
+          <ul>
+            <li>Taille max 660px</li>
+            <li>Class : <code>col-md-<em>"1 à 12"</em></code></li>
+          </ul>
+          <li>Taille large (lg) :</li>
+          <ul>
+            <li>Taille max 1160px</li>
+            <li>Class : <code>col-lg-<em>"1 à 12"</em></code></li>
+          </ul>
+          <li>Taille extra-large (xl) :</li>
+          <ul>
+            <li>Taille à partir de 1161px</li>
+            <li>Class : <code>col-xl-<em>"1 à 12"</em></code></li>
+          </ul>
+        </ul>
+      </article>
+
+      <!-- Margin & Padding -->
+      <article class="block col col-lg-6 col-xl-4 px-2 py-1">
+        <h2>Margin & Padding</h2>
+        <p>Il est possible de rajouter rapidement des margins et paddings à n'importe quel élément.</p>
+        <p>Soit localisé : top, bottom, left, right, en x (left et right), en y (top et bottom) ou en auto.</p>
+        <p>On peut augmenter le nombre de class en modifiant dans le code les variables <code>$nb_margin</code> pour les margins et <code>$nb_padding</code> pour les paddings. Il est aussi possible de modfier l'unité das laquelle ils sont exprimés grâce à la variable <code>$unit_margin</code> et <code>$unit_padding</code>.</p>
+        <h3>Margin</h3>
+        <ul>
+          <li>Margin auto :</li>
+          <ul>
+            <li>class : <code>m-auto</code></li>
+            <li>class : <code>mx-auto</code></li>
+            <li>class : <code>my-auto</code></li>
+          </ul>
+          <li>Margin :</li>
+          <ul>
+            <li>class : <code>m-<em>"0 à 12"</em></code></li>
+            <li>class : <code>mx-<em>"0 à 12"</em></code></li>
+            <li>class : <code>my-<em>"0 à 12"</em></code></li>
+          </ul>
+          <li>Margin localisé (top, bottom, left, right) :</li>
+          <ul>
+            <li>class top : <code>mt-<em>"0 à 12"</em></code></li>
+            <li>class bottom : <code>mb-<em>"0 à 12"</em></code></li>
+            <li>class left : <code>ml-<em>"0 à 12"</em></code></li>
+            <li>class right : <code>mr-<em>"0 à 12"</em></code></li>
+          </ul>
+        </ul>
+        <h3>Padding</h3>
+        <ul>
+          <li>Padding auto :</li>
+          <ul>
+            <li>class : <code>p-auto</code></li>
+            <li>class : <code>px-auto</code></li>
+            <li>class : <code>py-auto</code></li>
+          </ul>
+          <li>Padding :</li>
+          <ul>
+            <li>class : <code>p-<em>"0 à 12"</em></code></li>
+            <li>class : <code>px-<em>"0 à 12"</em></code></li>
+            <li>class : <code>py-<em>"0 à 12"</em></code></li>
+          </ul>
+          <li>Padding localisé (top, bottom, left, right) :</li>
+          <ul>
+            <li>class top : <code>pt-<em>"0 à 12"</em></code></li>
+            <li>class bottom : <code>pb-<em>"0 à 12"</em></code></li>
+            <li>class left : <code>pl-<em>"0 à 12"</em></code></li>
+            <li>class right : <code>pr-<em>"0 à 12"</em></code></li>
+          </ul>
+        </ul>
+      </article>
+
+      <!-- Color -->
+      <article class="block col col-lg-6 col-xl-4 px-2 py-1">
+        <h2>Couleurs</h2>
+        <p>Il est possible de rajouter rapidement des couleurs dans la variable <code>$all-colors</code> sous forme de <code>class_de_votre_couleur: le_code_de_votre_couleur,</code>.</p>
+        <p>Cela va permettre de générer automatiquement les class de la couleur du texte et du background ajouté.</p>
+        <p>Il est possible d'ajouter à ces class une opacité.</p>
+        <h3>Couleurs</h3>
+        <ul>
+          <li>Liste des couleurs actuelles :</li>
+          <ul>
+            <li>class : <code>white</code></li>
+            <li>class : <code>black</code></li>
+            <li>class : <code>blue</code></li>
+            <li>class : <code>red</code></li>
+          </ul>
+          <li>Couleur des textes :</li>
+          <ul>
+            <li>class : <code>txt-<em>"Nom_de_la_couleur"</em></code></li>
+          </ul>
+          <li>Couleur des textes avec opacité :</li>
+          <ul>
+            <li>class : <code>txt-<em>"Nom_de_la_couleur"</em>-<em>"0 à 10"</em></code></li>
+          </ul>
+          <li>Couleur des backgrounds :</li>
+          <ul>
+            <li>class : <code>bg-<em>"Nom_de_la_couleur"</em></code></li>
+          </ul>
+          <li>Couleur des backgrounds avec opacité :</li>
+          <ul>
+            <li>class : <code>bg-<em>"Nom_de_la_couleur"</em>-<em>"0 à 10"</em></code></li>
+          </ul>
+        </ul>
+      </article>
+
+      <!-- Border -->
+      <article class="block col col-lg-6 col-xl-12 px-2 py-1">
+        <h2>Bordures</h2>
+        <p>Il est possible de faire rapidement bordures en fonction des couleurs et de rajouter si besoin, une taille.</p>
+        <p>La bordure peut aussi être localisée : top, bottom, left, right, en x (left et right) ou en y (top et bottom).</p>
+        <p>Le nombre de class pour l'épaisseur des bordures peut être modifié grâce à la variable <code>$nb_border_radius</code>.</p>
+        <p>On peut aussi modifier l'unité exprimée de la bordure via la variable <code>à la variable <code>$unit_border</code></code>.</p>
+        <h3>Bordures</h3>
+        <ul>
+          <li>Bordure :</li>
+          <ul>
+            <li>class : <code>bc-<em>"Nom_de_la_couleur"</em></code></li>
+            <li>class : <code>bcx-<em>"Nom_de_la_couleur"</em></code></li>
+            <li>class : <code>bcy-<em>"Nom_de_la_couleur"</em></code></li>
+          </ul>
+          <li>Bordure localisé (top, bottom, left, right) :</li>
+          <ul>
+            <li>class top : <code>bct-<em>"Nom_de_la_couleur"</em></code></li>
+            <li>class bottom : <code>bcb-<em>"Nom_de_la_couleur"</em></code></li>
+            <li>class left : <code>bcl-<em>"Nom_de_la_couleur"</em></code></li>
+            <li>class right : <code>bcr-<em>"Nom_de_la_couleur"</em></code></li>
+          </ul>
+            <li>Bordure avec épaisseur :</li>
+            <ul>
+              <li>class : <code>bc-<em>"Nom_de_la_couleur"</em>-<em>"0 à 10"</em></code></li>
+              <li>class : <code>bcx-<em>"Nom_de_la_couleur"</em>-<em>"0 à 10"</em></code></li>
+              <li>class : <code>bcy-<em>"Nom_de_la_couleur"</em>-<em>"0 à 10"</em></code></li>
+            </ul>
+            <li>Bordure localisé avec épaisseur (top, bottom, left, right) :</li>
+            <ul>
+              <li>class top : <code>bct-<em>"Nom_de_la_couleur"</em>-<em>"0 à 10"</em></code></li>
+              <li>class bottom : <code>bcb-<em>"Nom_de_la_couleur"</em>-<em>"0 à 10"</em></code></li>
+              <li>class left : <code>bcl-<em>"Nom_de_la_couleur"</em>-<em>"0 à 10"</em></code></li>
+              <li>class right : <code>bcr-<em>"Nom_de_la_couleur"</em>-<em>"0 à 10"</em></code></li>
+            </ul>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+</body>
+</html>
